@@ -30,7 +30,7 @@ var_price = sorted_prices.iloc[cutoff_index]
 max_loss = 100.0 - var_price
 
 print(f"--------------------------------------")
-print(f"📊 SIMULATION RESULTS (100 Paths)")
+print(f"📊 STOCHASTIC ENGINE RESULTS (100 Paths)")
 print(f"Start Price:       $100.00")
 print(f"Average Final:     ${daily_averages.iloc[-1]:.2f}")
 print(f"--------------------------------------")
@@ -54,8 +54,8 @@ ax.plot(daily_averages, color='red', linewidth=3, linestyle='-', label='Average 
 # Layer 3: The VaR Line (Green Dotted Line)
 ax.axhline(y=var_price, color='green', linestyle=':', linewidth=2, label=f'95% VaR (${var_price:.2f})')
 
-# Labels
-ax.set_title("Monte Carlo Simulation: Trend + Risk Analysis")
+# Labels - UPDATED TITLE HERE
+ax.set_title("Stochastic Risk Engine: Asset Price Projection")
 ax.set_xlabel("Days")
 ax.set_ylabel("Price ($)")
 ax.grid(True)
