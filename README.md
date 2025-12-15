@@ -15,7 +15,7 @@ This project models **Geometric Brownian Motion** (a Stochastic Process) to visu
 
 ## 📸 Output
 Running the simulation generates unique price paths, a calculated "Average Trend" line, and a "95% VaR" risk threshold:
-*(You can upload your screenshot here later)*
+![Image](https://github.com/user-attachments/assets/3ffc11de-5d51-49ec-8164-7f3ec9a0409e)
 
 ## ⚡ How to Run
 1. **Compile the Engine:**
@@ -29,3 +29,4 @@ This generates data.csv with simulated prices.
    python3 visualizer.py
 
 This launches the interactive graph window with Zoom & Risk Analysis.
+
